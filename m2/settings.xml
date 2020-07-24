@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings>
+	<mirrors>
+		<mirror>
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<url>https://xxxx/</url>
+		</mirror>
+	</mirrors>
+
+	 <servers>
+		<server>
+			<id>nexus</id>
+			<username>xxxx</username>
+			<password>yyyy</password>
+		</server>
+		
+	</servers>
+
+	<profiles>
+		<profile>
+			<id>nexus</id>
+
+
+			<properties>
+				<wildfly.username>admin</wildfly.username>
+				<wildfly.password>admin</wildfly.password>
+
+				<tomcat.username>tomcat</tomcat.username>
+				<tomcat.password>tomcat</tomcat.password>
+
+				<sonar.host.url>https://xxxx</sonar.host.url>
+				<sonar.login>xxxx</sonar.login>
+				<sonar.password>yyyy</sonar.password>
+				
+				<sonar.dependencyCheck.report.dir>${project.build.directory}</sonar.dependencyCheck.report.dir>
+				<sonar.dependencyCheck.htmlReportPath>${sonar.dependencyCheck.report.dir}/dependency-check-report.html</sonar.dependencyCheck.htmlReportPath>
+				<sonar.dependencyCheck.reportPath>${sonar.dependencyCheck.report.dir}/dependency-check-report.xml</sonar.dependencyCheck.reportPath>
+				<formats>XML,HTML</formats>
+				<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+
+			</properties>
+		</profile>
+	</profiles>
+
+	<activeProfiles>
+		<activeProfile>nexus</activeProfile>
+	</activeProfiles>
+
+</settings>

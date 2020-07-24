@@ -1,0 +1,7 @@
+[user]
+	email = santiago.cardin@gmail.com
+	name = Santiago Cardin
+[core]
+	autocrlf = input
+[credential]
+	helper = store
