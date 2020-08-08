@@ -5,7 +5,7 @@ Mis ficheros dotfiles.
 ## Instalación
 
 ```bash
-git clone https://github.com/santiagocardin/dotfiles.git && cd .dotfiles
+git clone https://github.com/santiagocardin/.dotfiles.git && cd .dotfiles
 ```
 
 Enlazar configuración:
