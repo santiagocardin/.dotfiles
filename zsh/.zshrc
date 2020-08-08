@@ -1,3 +1,5 @@
+export TERM="xterm-256color"
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$PATH:$HOME/.istioctl/bin
 export PATH=$PATH:$HOME/.local/bin
@@ -71,7 +73,15 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(root_indicator)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git helm kubectl terraform)
+plugins=(
+    fzf
+    git
+    helm 
+    kubectl 
+    terraform
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
