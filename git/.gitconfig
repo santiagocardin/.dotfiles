@@ -5,3 +5,5 @@
 	autocrlf = input
 [credential]
 	helper = store
+[init]
+	templateDir = /home/scardin/.git-template
