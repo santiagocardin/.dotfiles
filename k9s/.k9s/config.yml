@@ -1,0 +1,40 @@
+k9s:
+  refreshRate: 2
+  headless: false
+  readOnly: false
+  noIcons: false
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: -1
+    fullScreenLogs: false
+    textWrap: false
+    showTime: false
+  currentContext: barkend
+  currentCluster: default
+  clusters:
+    default:
+      namespace:
+        active: ""
+        favorites:
+        - all
+        - barkend
+        - default
+      view:
+        active: po barkend
+      featureGates:
+        nodeShell: false
+      shellPod:
+        image: busybox:1.31
+        namespace: default
+        limits:
+          cpu: 100m
+          memory: 100Mi
+      portForwardAddress: localhost
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
