@@ -83,7 +83,8 @@ plugins=(
     fzf
     git
     helm 
-    kubectl 
+    kubectl
+    gcloud
     terraform
     zsh-autosuggestions
     zsh-syntax-highlighting
